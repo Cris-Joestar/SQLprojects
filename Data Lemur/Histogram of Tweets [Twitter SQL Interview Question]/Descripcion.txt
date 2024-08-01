@@ -1,0 +1,12 @@
+Supongamos que se le proporciona una tabla de datos de tweets de Twitter, escriba una consulta para obtener un histograma de tweets publicados por usuario en 2022. Genere el recuento de tweets por usuario como el grupo y la cantidad de usuarios de Twitter que caen en ese grupo.
+
+En otras palabras, agrupe a los usuarios por la cantidad de tweets que publicaron en 2022 y cuente la cantidad de usuarios en cada grupo.
+
+Tabla de tweets:
+Column Name	Type
+tweet_id	integer
+user_id	integer
+msg	string
+tweet_date	timestamp
+
+Referencia: https://datalemur.com/questions/sql-histogram-tweets

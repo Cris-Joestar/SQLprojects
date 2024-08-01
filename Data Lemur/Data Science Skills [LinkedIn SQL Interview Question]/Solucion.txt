@@ -1,0 +1,6 @@
+SELECT candidate_id
+FROM (SELECT candidate_id, COUNT(candidate_id) AS num_skills
+      FROM candidates
+      WHERE skill IN ('Python', 'Tableau', 'PostgreSQL')
+      GROUP BY candidate_id) AS SQ1
+WHERE num_skills = 3

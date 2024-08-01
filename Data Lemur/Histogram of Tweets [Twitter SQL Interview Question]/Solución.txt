@@ -1,0 +1,7 @@
+SELECT tweets_2022, COUNT(tweets_2022)
+FROM (SELECT user_id,
+          COUNT(user_id) AS tweets_2022
+    FROM tweets
+    WHERE EXTRACT(YEAR FROM tweet_date) = '2022'
+    GROUP BY user_id) AS q1
+GROUP BY tweets_2022
