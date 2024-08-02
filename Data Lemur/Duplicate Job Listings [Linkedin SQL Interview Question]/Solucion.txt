@@ -1,0 +1,6 @@
+SELECT COUNT(company_id) AS duplicate_companies
+FROM 
+    (SELECT company_id
+    FROM job_listings
+    GROUP BY company_id
+    HAVING COUNT(company_id) > 1 AND COUNT(title) > 1) AS SQ1
